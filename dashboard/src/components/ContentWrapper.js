@@ -3,6 +3,7 @@ import TopBar from './TopBar';
 import ContentRowTop from './ContentRowTop';
 import MovieList from './MovieList';
 import Footer from './Footer';
+import {Routes, Route} from "react-router-dom"
 function ContentWrapper(){
     return (
         <React.Fragment>
@@ -11,8 +12,11 @@ function ContentWrapper(){
                 {/*<!-- Main Content -->*/}
                 <div id="content">
                     <TopBar />
-                    <ContentRowTop />
-                    <MovieList />
+                    <Routes>
+                        <Route path="/" element={<ContentRowTop />} />
+                        <Route path="/movies" element={<MovieList />} />
+                    </Routes>
+                    
                     <Footer />
                 </div>
             </div>    

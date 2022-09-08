@@ -19,6 +19,7 @@
     "method-override": "^3.0.0",
     "moment": "^2.29.1",
     "mysql2": "^2.2.5",
+    "react-router-dom": "^6.3.0",
     "sequelize": "^6.5.0"
   },
   "devDependencies": {
